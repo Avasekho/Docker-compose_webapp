@@ -7,7 +7,7 @@ services:
       - tomcat_webapps:/shared_folder:rw
 
   tomcat:
-    image: tomcat:10.1-jdk17-corretto
+    image: tomcat:10.1-jre11-openjdk-slim
     volumes:
       - tomcat_webapps:/usr/local/tomcat/webapps:rw
     ports: 
