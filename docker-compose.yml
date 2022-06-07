@@ -4,11 +4,11 @@ services:
   maven:
     build: maven/
     volumes:
-
+      - tomcat_webapps:/shared_folder
 
   tomcat:
     image: tomcat:10.1-jdk17-corretto
     volumes:
-    
+      - tomcat_webapps: /usr/local/tomcat/webapps
     ports: 
       - "8080:8080"
