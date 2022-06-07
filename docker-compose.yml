@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  maven:
+    build: maven/
+    volumes:
+
+
+  tomcat:
+    image: tomcat:10.1-jdk17-corretto
+    volumes:
+    
+    ports: 
+      - "8080:8080"
