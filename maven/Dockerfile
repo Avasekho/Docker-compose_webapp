@@ -1,4 +1,4 @@
-FROM maven:3.8.5-amazoncorretto-17
+FROM maven:3.8.5-jdk-11
 RUN apt update
 WORKDIR /tmp/
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git
